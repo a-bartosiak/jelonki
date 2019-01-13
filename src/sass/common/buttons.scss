@@ -1,0 +1,69 @@
+button {
+  letter-spacing: 0.6px;
+  text-align: center;
+  font-size: 1.6em;
+  font-family: "Adelle", sans-serif;
+  height: 60px;
+  border-radius: 37px;
+  text-transform: uppercase;
+  margin: 1em;
+  font-weight: 100;
+}
+
+.give-donation {
+  background-color: $orange;
+  color: $base-color;
+  border-color: transparent;
+  width: 223px;
+}
+
+.share {
+  background-color: $yellow;
+  color: $base-color;
+  border-color: transparent;
+  width: 163px;
+}
+
+.scroll-down {
+  border-color: transparent;
+}
+
+.meet-pets {
+    background-color: $base-color;
+    border-color: $yellow;
+    color: $yellow;
+    width: 286px;
+
+    img {
+      margin-left: 5px;
+      width: 52px;
+      height: 36px;
+    }
+  @media all and (max-width: 991px) {
+    display: none;
+  }
+}
+
+.support-donation,
+.support-share {
+  background-color: $base-color;
+  border-color: $base-color;
+  color: $yellow;
+  font-size: 14px;
+}
+
+.support-donation {
+  width: 224px;
+}
+
+.support-share {
+  width: 285px;
+}
+
+.back-to-page {
+  background-color: $orange;
+  color: $base-color;
+  border-color: transparent;
+  width: 200px;
+  font-size: 12px;
+}

@@ -1,0 +1,92 @@
+#main-section {
+  min-height: 200vh;
+  background-image: url("../../images/BackgroundBottom-lg-monitor.png");
+  background-position: center;
+  background-size: cover;
+  @media all and (max-width: 1199px) {
+    background-image: url("../../images/BackgroundBottom-small-monitor.png");
+  }
+  @media all and (max-width: 768px) {
+    background-image: url("../../images/BackgroundBottom-tablet.png");
+  }
+  @media all and (max-width: 575px) {
+    background-image: url("../../images/BackgroundBottom-mobile.png");
+  }
+}
+
+section {
+  min-height: 100vh;
+}
+
+.price-boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  @media all and (max-width: 575px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: $base-color;
+  box-shadow: 0 10px 45px 0 #E5E6ED;
+  border-radius: 20px;
+  padding: 30px 20px;
+  letter-spacing: 0;
+  line-height: 30px;
+  font-size: 18px;
+  color: $base-dark;
+  text-align: center;
+  min-height: 410px;
+  width: 30%;
+  max-width: 420px;
+  @media all and (max-width: 575px) {
+    width: 100%;
+  }
+
+  &:nth-child(even) {
+    margin-top: 50px;
+    @media all and (max-width: 575px) {
+      margin: 10px;
+    }
+  }
+
+  &:nth-child(odd) {
+    margin-bottom: 50px;
+    @media all and (max-width: 575px) {
+      margin: 10px;
+    }
+  }
+
+  span {
+    color: $yellow;
+    font-size: 58px;
+    letter-spacing: 0;
+  }
+
+  img {
+    height: 164px;
+    width: 164px;
+    margin: 30px 20px 0;
+  }
+}
+
+.description p {
+  margin-bottom: 15px;
+}
+
+.support-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  @media all and (max-width: 575px) {
+    flex-direction: column;
+  }
+}

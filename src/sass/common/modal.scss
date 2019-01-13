@@ -1,0 +1,68 @@
+/* The Modal (background) */
+.modal {
+  background-image: url("../../images/Rectangle.png"), url("../../images/#HERO.png");
+  background-position: center;
+  background-size: cover;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+/* Modal Content */
+.modal-content {
+  margin: auto;
+  padding-top: 40vh;
+  width: 100%;
+  height: 100%;
+
+  p {
+    color: $base-dark;
+    font-size: 22px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: center;
+  }
+}
+
+.modal-play {
+  height: 300px;
+  width: 30%;
+  margin: 0 5px 5px 5px;
+  background: $base-color;
+  box-shadow: 0 10px 45px 0 #E5E6ED;
+  font-size: 24px;
+  color: $base-dark;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 12px;
+
+  .video {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    height: 60%;
+    width: 100%;
+    background-color: $orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .play-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+
+    .modal-play-header {
+      font-size: 16px;
+    }
+
+    .modal-play-content {
+      font-size: 14px;
+    }
+  }
+}

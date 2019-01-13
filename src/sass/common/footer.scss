@@ -1,0 +1,23 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 100vh;
+
+    .column {
+      height: 80vh;
+    }
+
+    .column img {
+      width: 259px;
+      height: 209px;
+    }
+
+    .footer-logos {
+      height: 20vh;
+    }
+
+    .x {
+      margin: 0 2em;
+    }
+}
