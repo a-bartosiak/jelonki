@@ -31,8 +31,9 @@ header .logo {
   width: 50%;
   display: flex;
   justify-content: space-between;
-  // @media all and (max-width: 1199px) {
-  //   width: 100%;
-  //   justify-content: center;
-  // }
+  @media all and (max-width: 991px) {
+    left: 0;
+    width: 100vw;
+    justify-content: center;
+  }
 }

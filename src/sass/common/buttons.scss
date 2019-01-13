@@ -26,6 +26,7 @@ button {
 
 .scroll-down {
   border-color: transparent;
+  margin: 0;
 }
 
 .meet-pets {
@@ -54,10 +55,16 @@ button {
 
 .support-donation {
   width: 224px;
+  @media all and (max-width: 575px) {
+    width: 100%;
+  }
 }
 
 .support-share {
   width: 285px;
+  @media all and (max-width: 575px) {
+    width: 100%;
+  }
 }
 
 .back-to-page {

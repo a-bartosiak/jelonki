@@ -68,12 +68,21 @@ section {
     color: $yellow;
     font-size: 58px;
     letter-spacing: 0;
+    line-height: 30px;
+    @media all and (max-width: 1199px) {
+      font-size: 42px;
+      line-height: 21.6px;
+    }
+    @media all and (max-width: 768px) {
+      font-size: 32px;
+      line-height: 17.28px;
+    }
   }
 
   img {
     height: 164px;
     width: 164px;
-    margin: 30px 20px 0;
+    // margin: 30px 20px 0;
   }
 }
 
