@@ -2,6 +2,11 @@ $base-color: #ffffff;
 $orange: #FF6563;
 $yellow: #F5A623;
 $base-dark: #000000;
+$shadow-color: #E5E6ED;
+$max-small-monitor: 1199px;
+$max-tablet-vertical: 991px;
+$max-tablet: 768px;
+$max-mobile: 575px;
 
 body {
   font-family: 'Adelle', sans-serif;
@@ -12,17 +17,21 @@ body {
 .container {
   margin: 0 auto;
   width: 1160px;
-  @media all and (max-width: 1199px) {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media all and (max-width: $max-small-monitor) {
     width: 960px;
   }
-  @media all and (max-width: 991px) {
+  @media all and (max-width: $max-tablet-vertical) {
     width: 720px;
   }
-  @media all and (max-width: 768px) {
-    width: 540px;
+  @media all and (max-width: $max-tablet) {
+    width: 90%;
   }
-  @media all and (max-width: 575px) {
-    width: 95%;
+  @media all and (max-width: $max-mobile) {
+    width: 90%;
   }
 }
 
@@ -48,36 +57,46 @@ h1 {
   line-height: 50px;
   font-weight: 100;
   margin: 10px 0;
-  @media all and (max-width: 1199px) {
-    font-size: 25.92px;
+  @media all and (max-width: $max-small-monitor) {
+    font-size: 26px;
     line-height: 36px;
   }
-  @media all and (max-width: 575px) {
+  @media all and (max-width: $max-mobile) {
+    margin: 20px 0;
     font-size: 14px;
     line-height: 18px;
   }
 }
 
 h2 {
+  font-family: 'Adelle-bold', sans-serif;
   font-size: 26px;
   color: $base-color;
   letter-spacing: 0;
   text-align: center;
-  font-weight: 100;
-  @media all and (max-width: 575px) {
-    font-size: 14px;
-    letter-spacing: 0;
+  margin: 20px 0;
+  @media all and (max-width: $max-tablet) {
+    font-size: 18px;
     margin: 30px 0;
-
+  }
+  @media all and (max-width: $max-mobile) {
+    font-size: 14px;
+    margin: 30px 0;
   }
 }
 
 h3 {
+  font-family: 'Adelle-bold', sans-serif;
   font-size: 20px;
   color: $base-color;
   letter-spacing: 0;
   text-align: center;
   line-height: 26px;
-  margin-bottom: 2em;
+  margin-bottom: 60px;
   font-weight: 100;
+  @media all and (max-width: $max-mobile) {
+    font-size: 14px;
+    line-height: 20px;
+    // margin-bottom: 150px;
+  }
 }

@@ -1,4 +1,4 @@
-button {
+.button-basic {
   letter-spacing: 0.6px;
   text-align: center;
   font-size: 1.6em;
@@ -8,20 +8,19 @@ button {
   text-transform: uppercase;
   margin: 1em;
   font-weight: 100;
+  padding: 0 25px;
 }
 
 .give-donation {
   background-color: $orange;
   color: $base-color;
   border-color: transparent;
-  width: 223px;
 }
 
 .share {
   background-color: $yellow;
   color: $base-color;
   border-color: transparent;
-  width: 163px;
 }
 
 .scroll-down {
@@ -33,7 +32,6 @@ button {
     background-color: $base-color;
     border-color: $yellow;
     color: $yellow;
-    width: 286px;
 
     img {
       margin-left: 5px;
@@ -54,15 +52,13 @@ button {
 }
 
 .support-donation {
-  width: 224px;
-  @media all and (max-width: 575px) {
+  @media all and (max-width: $max-mobile) {
     width: 100%;
   }
 }
 
 .support-share {
-  width: 285px;
-  @media all and (max-width: 575px) {
+  @media all and (max-width: $max-mobile) {
     width: 100%;
   }
 }
@@ -71,6 +67,6 @@ button {
   background-color: $orange;
   color: $base-color;
   border-color: transparent;
-  width: 200px;
   font-size: 12px;
+  align-self: flex-end;
 }

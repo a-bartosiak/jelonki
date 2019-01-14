@@ -1,15 +1,14 @@
 (function(){
-    console.log('Witamy Jelonki! ');
 
     var modal = document.getElementById('show-modal');
     var btn = document.getElementById("open-modal");
-    var span = document.getElementsByClassName("close")[0];
+    var close = document.getElementsByClassName("close")[0];
 
     btn.onclick = function() {
       modal.style.display = "block";
     }
 
-    span.onclick = function() {
+    close.onclick = function() {
       modal.style.display = "none";
     }
 

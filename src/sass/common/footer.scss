@@ -5,7 +5,10 @@ footer {
     min-height: 100vh;
 
     .column {
-      height: 80vh;
+      min-height: 80vh;
+      @media all and (max-width: $max-mobile) {
+        min-height: 90vh;
+      }
     }
 
     .column img {
@@ -14,10 +17,13 @@ footer {
     }
 
     .footer-logos {
-      height: 20vh;
+      min-height: 20vh;
+      @media all and (max-width: $max-mobile) {
+        min-height: 10vh;
+      }
     }
 
-    .x {
+    .join-x {
       margin: 0 2em;
     }
 }

@@ -3,13 +3,13 @@ header {
   background-image: url("../../images/header-lg-monitor.png");
   background-position: center;
   background-size: cover;
-  @media all and (max-width: 1199px) {
+  @media all and (max-width: $max-small-monitor) {
     background-image: url("../../images/header-small-monitor.png");
   }
-  @media all and (max-width: 768px) {
+  @media all and (max-width: $max-tablet) {
     background-image: url("../../images/header-tablet.png");
   }
-  @media all and (max-width: 575px) {
+  @media all and (max-width: $max-mobile) {
     background-image: url("../../images/header-mobile.png");
   }
 }
@@ -25,15 +25,16 @@ header .logo {
 }
 
 .buttons-right {
-  position: absolute;
-  bottom: 50px;
-  left: 50%;
+  margin-left: 50%;
+  margin-top: 50px;
   width: 50%;
   display: flex;
   justify-content: space-between;
-  @media all and (max-width: 991px) {
+  @media all and (max-width: $max-tablet-vertical) {
     left: 0;
-    width: 100vw;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
     justify-content: center;
   }
 }
