@@ -4,6 +4,8 @@ const sourcemaps   = require('gulp-sourcemaps');
 const autoprefixer = require('gulp-autoprefixer');
 const browserSync  = require('browser-sync');
 const plumber      = require('gulp-plumber');
+const deploy      = require('gulp-gh-pages');
+
 
 gulp.task('browser-sync', () => {
     browserSync.init({
@@ -68,6 +70,11 @@ gulp.task('fonts', function() {
   return gulp.src('src/fonts/**/*.*')
   .pipe(gulp.dest('public/fonts'))
 })
+
+gulp.task('deploy', function () {
+  return gulp.src("./public/**/*")
+    .pipe(deploy())
+});
 
 
 
